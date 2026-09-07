@@ -1,0 +1,13 @@
+{
+  "name": "technocore-export-verifier",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline Ed25519 did:key verification for Technocore room exports, with a Korean guide",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "example": "node src/cli.mjs --room technocore --file examples/published-record.jsonl --fail-on-unsigned"
+  }
+}
